@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="encabezado">
+        <a href="/">
+            <h1><span>Coder</span>Beer</h1>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et fugiat ad autem corrupti porro provident ab laboriosam, maiores ullam nulla.</p>
+        <img src="/" alt="ImagenEncabezado">
+        <nav class="navegacion">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/Páginas/Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/Páginas/Tienda.html">Tienda</a></li>
+                <li><a href="/Páginas/Contacto.html">Contacto</a></li>
+                <li><a href="/Páginas/Galeria.html">Galería</a></li>      
+            </ul>
+        </nav>
+    </header>
+    <!--Fin del encabezado-->
+
+    <div>
+        <h2>Contáctanos</h2>
+        <form action="" method="POST" >
+            <fieldset>  
+                <!--Motivo-->
+                <label>Motivo:</label><br>
+                <select name="razon" required>
+                    <option selected="selected" disabled>--Seleccione una Opción--</option>
+                    <option value="Sugerencia">Sugerencias</option>
+                    <option value="Ventas">Ventas</option>
+                    <option value="Denuncias">Denuncias</option>
+                    <option value="sinMotivo">Otros</option>
+                </select><br><br>
+                <!--Fin Motivo-->
+                <!--Género-->
+                <label id="genero" required>Género:</label><br><br>          
+                <input type="radio" name="genero" value="Hombre">
+                <label>Hombre</label>
+                <input type="radio" name="genero" value="Mujer">
+                <label>Mujer</label><br><br>                        
+                <!--Fin Género-->
+                <!--Nombre-->
+                <label for="nombre">Nombre y Apellido</label> <br><br>
+                <input type="text" id="nombre" required placeholder="Ingresa tu nombre"><br><br>
+                <!--Fin Nombre-->
+                <!--Mail-->
+                <label for="mail">E-Mail</label> <br><br>
+                <input type="email" id="mail" required placeholder="Ingresa tu mail"> <br><br>
+                <!--Fin Mail-->
+                <!--Comentario-->
+                <label for="comentario">Comentario:</label><br><br>
+                <textarea name="comentario" cols="100" rows="5" required placeholder="Escribe un comentario"></textarea> <br><br>
+                <!--Fin Comentario-->
+                <!--Checkbox-->
+                <input type="checkbox" required>
+                <label>He leído y acepto las condiciones de uso y la política de privacidad.</label><br><br>
+                <input type="checkbox">
+                <label>Si, quiero recibir emails de CoderBeer.</label><br><br>
+                <!--Fin Checkbox-->
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar Formulario">
+            </fieldset>
+        </form>
+    </div>
+</body>
+<footer>
+    <nav class="navegacion">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/Páginas/Nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="/Páginas/Tienda.html">Tienda</a></li>
+            <li><a href="/Páginas/Contacto.html">Contacto</a></li>
+            <li><a href="/Páginas/Galeria.html">Galería</a></li>      
+        </ul>
+    </nav>
+    <p>Todos los derechos reservados 2021 &copy;</p>
+</footer>
+</html>
