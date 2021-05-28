@@ -1,0 +1,26 @@
+.formulario {
+    @include flex(row, center, center);
+
+    .formDisplay {
+        display: inline-block;
+        max-width: 600px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 1px solid $primaryColor;
+        margin: 1rem;
+        .formPad {
+            margin: 1rem;
+        }
+    }
+
+}
+
+.ubiDato {
+    text-align: center;
+    padding: 2rem;
+
+    iframe {
+        max-width: 600px;
+    }
+}

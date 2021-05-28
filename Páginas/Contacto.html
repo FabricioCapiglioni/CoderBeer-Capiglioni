@@ -1,85 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto |Coder Beer|</title>
+    <meta name="description" content="Te invitamos a contactarnos por medio de nuestros canales habilitados.">
+    <meta name="keywords" content="coder, beer, cerveza, contacto Coder Beer, telefono coder">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="preconnect" href="/CSS/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
+
 <body>
-    <header class="encabezado">
-        <a href="/">
-            <h1><span>Coder</span>Beer</h1>
+    <header class="header container-fluid">
+        <div class="headerMenu row">
+            <div class="menuIcono col-sm-8">
+                <button class="iconoButton navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <i class="fas fa-beer"></i>
+                    <p>Menu</p>
+                </button>
+            </div>
+            <nav class="menuRedes col-sm-4 col-md-12 col-lg-12">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </nav>
+        </div>
+        <a class="row col-lg-8 coder" href="/">
+            <h1 class=""><i class="fas fa-code"></i>Coder Beer<i class="fas fa-code"></i></h1>
         </a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et fugiat ad autem corrupti porro provident ab laboriosam, maiores ullam nulla.</p>
-        <img src="/" alt="ImagenEncabezado">
-        <nav class="navegacion">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/Páginas/Nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="/Páginas/Tienda.html">Tienda</a></li>
-                <li><a href="/Páginas/Contacto.html">Contacto</a></li>
-                <li><a href="/Páginas/Galeria.html">Galería</a></li>      
-            </ul>
+        <div class="col-lg-8">
+            <h3>La Mejor Cerveza Artesanal</h3>
+        </div>
+        <nav class="row navbar navbar-expand-md">
+            <div class="navegacion collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Páginas/Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Páginas/Tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Páginas/Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Páginas/Carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!--Fin del encabezado-->
 
-    <div>
-        <h2>Contáctanos</h2>
-        <form action="" method="POST" >
-            <fieldset>  
-                <!--Motivo-->
-                <label>Motivo:</label><br>
-                <select name="razon" required>
-                    <option selected="selected" disabled>--Seleccione una Opción--</option>
-                    <option value="Sugerencia">Sugerencias</option>
-                    <option value="Ventas">Ventas</option>
-                    <option value="Denuncias">Denuncias</option>
-                    <option value="sinMotivo">Otros</option>
-                </select><br><br>
-                <!--Fin Motivo-->
-                <!--Género-->
-                <label id="genero" required>Género:</label><br><br>          
-                <input type="radio" name="genero" value="Hombre">
-                <label>Hombre</label>
-                <input type="radio" name="genero" value="Mujer">
-                <label>Mujer</label><br><br>                        
-                <!--Fin Género-->
-                <!--Nombre-->
-                <label for="nombre">Nombre y Apellido</label> <br><br>
-                <input type="text" id="nombre" required placeholder="Ingresa tu nombre"><br><br>
-                <!--Fin Nombre-->
-                <!--Mail-->
-                <label for="mail">E-Mail</label> <br><br>
-                <input type="email" id="mail" required placeholder="Ingresa tu mail"> <br><br>
-                <!--Fin Mail-->
-                <!--Comentario-->
-                <label for="comentario">Comentario:</label><br><br>
-                <textarea name="comentario" cols="100" rows="5" required placeholder="Escribe un comentario"></textarea> <br><br>
-                <!--Fin Comentario-->
-                <!--Checkbox-->
-                <input type="checkbox" required>
-                <label>He leído y acepto las condiciones de uso y la política de privacidad.</label><br><br>
-                <input type="checkbox">
-                <label>Si, quiero recibir emails de CoderBeer.</label><br><br>
-                <!--Fin Checkbox-->
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar Formulario">
-            </fieldset>
-        </form>
+    <h2>Contactanos</h2>
+    <form class="formulario" action="" method="POST">
+        <div class="formDisplay">
+            <div class="formPad">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Motivo</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Elige...</option>
+                    <option value="1">Sugerencias</option>
+                    <option value="2">Ventas</option>
+                    <option value="3">Denuncias</option>
+                    <option value="4">Otros</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formPad">
+                <label class="form-check-label" id="genero" required>Género</label>
+                <div class="">
+                    <div class="col form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox1" name="genero" value="Hombre">
+                        <label class="form-check-label" for="inlineCheckbox1">Hombre</label>
+                    </div>
+                    <div class="col form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" value="Mujer">
+                        <label class="form-check-label">Mujer</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row formPad">
+                <label class="form-label" for="nombre">Nombre y Apellido</label>
+                <input class="form-control" type="text" id="nombre" required placeholder="Ingresa tu nombre">
+            </div>
+            <div class="row formPad">
+                <label class="form-label" for="mail">E-Mail</label>
+                <input class="form-control" type="email" id="" required placeholder="Ingresa tu mail">
+            </div>
+            <div class="formPad row">
+                <label class="form-label" for="comentario">Comentario</label>
+                <textarea class="form-control" name="comentario" cols="40" rows="5" required
+                    placeholder="Escribe un comentario"></textarea>
+            </div>
+            <div class="formPad form-check">
+                <div>
+                    <input class="form-check-input" type="checkbox" required>
+                    <label class="form-check-label">He leído y acepto las condiciones de uso y la política de privacidad.</label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Si, quiero recibir emails de CoderBeer.</label>
+                </div>
+            </div>
+            <div class="formPad">
+                <input class="btn btn-primary" type="submit" value="Enviar">
+                <input class="btn btn-secondary" type="reset" value="Limpiar Formulario">
+            </div>
+        </div>
+    </form>
+
+    <h2>Encontranos</h2>
+
+    <div class="ubiDato">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77009.88320768283!2d-64.38621438631323!3d-31.4585067455753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d5ffcf1568c85%3A0xe3f0592914b99e05!2sPe%C3%B1%C3%B3n%20Del%20%C3%81guila%20-%20Cerveza%20Legendaria!5e0!3m2!1ses!2sar!4v1619555234359!5m2!1ses!2sar"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
     </div>
+    
+    <footer class="footer">
+        <nav class="navFooter">
+            <a href="/index.html">Inicio</a>
+            <a href="/Páginas/Nosotros.html">Nosotros</a>
+            <a href="/Páginas/Tienda.html">Tienda</a>
+            <a href="/Páginas/Contacto.html">Contacto</a>
+            <a class="nav-link" href="/Páginas/Carrito.html"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+        <p>Todos los derechos reservados 2021 &copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
 </body>
-<footer>
-    <nav class="navegacion">
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/Páginas/Nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="/Páginas/Tienda.html">Tienda</a></li>
-            <li><a href="/Páginas/Contacto.html">Contacto</a></li>
-            <li><a href="/Páginas/Galeria.html">Galería</a></li>      
-        </ul>
-    </nav>
-    <p>Todos los derechos reservados 2021 &copy;</p>
-</footer>
+
 </html>

@@ -1,0 +1,42 @@
+.footer {
+    background-color: $tertiaryColor; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .navFooter {
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        a {
+            color: $primaryColor;
+            margin: 0.5rem;
+            display: block;
+            font-size: 2rem;
+            margin-top: 1.4rem;
+            text-transform: uppercase;
+            &:hover {
+                color: $secondaryColor;
+            }
+            &:last-child { 
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    p {
+        color: $secondaryColor;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .footer {
+        .navFooter{
+            a {
+                display: inline-block;
+                font-size: 1.4rem;
+            }
+        }
+    }   
+}

@@ -1,0 +1,121 @@
+.header {
+    background-image: url(/Imagenes/Brewery_2_banner.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: $diezRem*4.5;
+
+    .headerMenu {
+        font-size: 1.8rem;
+        color: $primaryColor;
+        align-items: center;
+        padding-top: 1rem;
+
+        .menuIcono {
+            width: 60%;
+            .iconoButton {
+                color: $primaryColor;
+                i {
+                    font-size: 4rem;
+                    padding-left: 0.8rem;
+                    user-select: none;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+                &:focus {                    
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        }
+        .menuRedes {
+            display: flex;
+            width: 40%;
+            justify-content: right;
+
+            a {
+                margin: 0.5rem;
+                color: $primaryColor;
+
+                &:hover {
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+    .navegacion {
+        justify-content: center;
+        margin-top: 5rem;
+        text-align: center;
+        a {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $secondaryColor;
+            text-transform: uppercase;
+    
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width:768px) {
+    .header {
+        .headerMenu {
+            .menuIcono {
+                display: none;
+            }
+            .menuRedes {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                a {
+                    margin: 0.5rem;
+                }
+            }
+        }
+        .navegacion {
+            display: flex;
+            justify-content: center;
+            margin-top: $diezRem*2.4;
+        }
+    }
+    
+}
+
+@media only screen and (min-width:992px) {
+    .header {
+        .headerMenu {
+            .menuRedes {
+                display: flex;
+                justify-content: right;
+            }
+        }
+        h1 {
+            display: flex;
+            justify-content: left;
+            font-size: 3.5rem;
+            margin-top: -5rem;
+        }
+        h3 {
+            margin-top: $diezRem;
+            text-align: start;
+        }
+        .navegacion {
+            justify-content: start;
+            margin-top: $diezRem*2.05;
+        }
+    }   
+} 

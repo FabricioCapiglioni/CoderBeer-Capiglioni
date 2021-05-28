@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: $primaryFont;
+    background-image: $bgBody;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: $secondaryColor;
+    text-align: center;
+    font-family: $secondaryFont;
+    font-size: 3rem;
+    padding-top: 1rem;
+
+    &:hover {
+        color: $primaryColor;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: $primaryColor;
+    font-size: 2rem;
+    background-color: $tertiaryColor;
+    padding: 0.1rem;
+}
+
+h3 {
+    font-family: $secondaryFont;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: $primaryColor;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h4 {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: $primaryColor;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: $primaryColor;
+    &:focus {
+        background-color: $primaryColor;
+        border: none;
+        box-shadow: none;
+    }
+    &:hover {
+        background-color: $primaryColor
+    }
+     
+}
+
+.btn-secondary {
+    background-color: $tertiaryColor;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}

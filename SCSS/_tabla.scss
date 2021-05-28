@@ -1,0 +1,44 @@
+.cerveza {
+    display: none;
+    .cervezaDisplay {
+        .displayTabla {
+            background-image: url(/Imagenes/banner-tabla.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border:  black double;
+            text-align: center;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: 1.6rem;
+            thead {
+                color: $primaryColor;
+                text-transform: uppercase;
+                justify-content: space-between;
+                th{
+                    margin: 1rem;
+                }
+            }
+            tbody {
+                color: $secondaryColor;
+            }
+            
+            tfoot td {
+                color: $primaryColor;
+                padding-top: 2rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:998px) {
+    .cerveza {
+        display: block;
+        .cervezaDisplay {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+}

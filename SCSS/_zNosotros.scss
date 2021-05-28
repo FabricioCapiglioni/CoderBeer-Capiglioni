@@ -1,0 +1,71 @@
+$colores:(
+1: gold,
+2: crimson,
+3: red,
+4: yellow,
+5: darkorange,
+6: $blackColor,
+);
+
+.nosDisplay {
+    margin: 2rem;
+
+    .nosContent {
+        text-align: center;
+
+        p {
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.instal {
+    text-align: center;
+    padding-bottom: 1rem;
+    .instalVideo {
+        @include flex(row,center);
+    }
+}
+
+.infoCerveza {
+    @include flex(row,center);
+    .displayInfo {
+        @include flex(column);
+        width: 100%;
+        margin: 1rem;
+        .accordion {
+            width: 80%;
+            max-width: 800px;
+            @for $i from 1 through 6 {
+                .item#{$i} {
+                    opacity: 0.2 * $i;
+                }
+            }
+            @each $var, $color in $colores {
+                .item#{$var} {
+                    background-color: $color;
+                }
+            }
+            .accordion-body {
+                text-align: justify;
+            }
+        } 
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .nosDisplay {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .nosContent {
+            width: 50%;
+        }
+    }
+
+    .nosImg {
+        width: 50%;
+        margin-left: 1rem;
+    }
+}

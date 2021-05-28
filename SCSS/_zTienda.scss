@@ -1,0 +1,79 @@
+.navTienda {
+    display: none;
+}
+
+@media only screen and (min-width:1200px) {
+    .main {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .sideTienda {
+            display: inline-block;
+            flex-direction: column;
+            width: 80rem;
+            background-color: $primaryColor;
+            -webkit-box-shadow: inset 0px 0px 114px -50px rgba(0,0,0,0.8);
+            -moz-box-shadow: inset 0px 0px 114px -50px rgba(0,0,0,0.8);
+            box-shadow: inset 0px 0px 114px -50px rgba(0,0,0,0.8);
+            opacity: 0.7;
+            h2 {
+                color: $secondaryColor;
+                font-weight: 700;
+                background-color: inherit;
+                padding: 2rem 0;
+            }
+
+            .navTienda {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        text-align: left;
+                        padding: 2rem 0;
+
+                        a {
+                            font-size: 1.4rem;
+                            color: $secondaryColor;
+                            padding: 0 1rem;
+                            i {
+                                margin: 0.4rem;
+                            }
+                            &:hover {
+                                color: $primaryColor;
+                            }
+                        }
+
+                        ul {
+                            display: none;
+                            width: 100%;
+                            padding-left: 1.5rem;
+                            li {
+                                padding: 1rem;
+                                a {
+                                    font-size: 1rem;
+                                }
+                                
+                            }
+                        }
+
+                        &:hover {
+                            ul {
+                                display: block;
+
+                                a {
+                                    color: $primaryColor;
+                                }
+                            }
+
+                            background-color: $tertiaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

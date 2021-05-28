@@ -1,0 +1,106 @@
+.carro {
+    padding: 2rem;
+    .carrito {
+        padding: 3rem;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 1px solid $primaryColor;
+        -webkit-box-shadow: 0px 0px 25px -4px $primaryColor;
+        -moz-box-shadow: 0px 0px 25px -4px $primaryColor;
+        box-shadow: 0px 0px 25px -4px $primaryColor;
+        .nav-tabs {
+            width: auto;
+            border-bottom: 2px solid $primaryColor;;
+        }
+        .tab-content {
+            padding: 1rem;
+            .prod {
+                border: 2px solid $primaryColor;
+                margin-bottom: 1rem;
+                padding: 1rem;
+                justify-content: center;
+                text-align: center;
+                &:only-child {
+                    display: flex;
+                    justify-content: center;
+                }
+                .prodType {
+                    margin-top: 0.5rem;
+                }
+                .itemCant {
+                    input {
+                        width: 110px;
+                    }
+                }
+            }
+        }
+        .suma {
+            padding: 1rem 0;
+            border-top: 2px solid $primaryColor;
+            border-bottom: 2px solid $primaryColor;
+            align-items: center;
+            .direccion {
+                display: flex;
+                justify-content: center;
+                .btnEnvio {
+                    background-color: $primaryColor;
+                    font-weight: 600;
+                }
+            }
+            .sumaTotal {
+                text-align: center;
+                padding: 0;
+                font-size: 2rem;
+            }
+        }
+        .gap-2 {
+            padding-top: 2rem;
+            display: flex;
+            justify-content: end;
+            .me-md-2 {
+                border: 1px solid black;
+                color: $secondaryColor;
+                font-size: 1.2rem;
+                font-weight: 700;
+                justify-content: end;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    .carro {
+        .carrito {
+            .suma {
+                .sumaTotal {
+                    text-align: right;
+                }
+            }
+        }  
+    }
+    .prod {
+        align-items: center;
+        span {
+            color: $primaryColor;
+            font-weight: 700;
+        }
+        .prodDesc {
+            .prodType {
+                text-align: start;
+            }
+        }
+        .price{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
