@@ -44,7 +44,6 @@
             align-items: center;
             .direccion {
                 display: flex;
-                justify-content: center;
                 .btnEnvio {
                     background-color: $primaryColor;
                     font-weight: 600;
@@ -52,7 +51,7 @@
             }
             .sumaTotal {
                 text-align: center;
-                padding: 0;
+                padding: 0 1rem 0 0;
                 font-size: 2rem;
             }
         }

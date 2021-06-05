@@ -474,14 +474,13 @@ a, a:visited {
       border-bottom: 2px solid orange;
       align-items: center; }
       .carro .carrito .suma .direccion {
-        display: flex;
-        justify-content: center; }
+        display: flex; }
         .carro .carrito .suma .direccion .btnEnvio {
           background-color: orange;
           font-weight: 600; }
       .carro .carrito .suma .sumaTotal {
         text-align: center;
-        padding: 0;
+        padding: 0 1rem 0 0;
         font-size: 2rem; }
     .carro .carrito .gap-2 {
       padding-top: 2rem;
