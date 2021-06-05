@@ -458,7 +458,8 @@ a, a:visited {
         margin-bottom: 1rem;
         padding: 1rem;
         justify-content: center;
-        text-align: center; }
+        text-align: center;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45); }
         .carro .carrito .tab-content .prod:only-child {
           display: flex;
           justify-content: center; }
