@@ -325,6 +325,8 @@ a, a:visited {
     .infoCerveza .displayInfo .accordion {
       width: 80%;
       max-width: 800px; }
+      .infoCerveza .displayInfo .accordion .item6 {
+        color: white; }
       .infoCerveza .displayInfo .accordion .item1 {
         opacity: 0.2; }
       .infoCerveza .displayInfo .accordion .item2 {
