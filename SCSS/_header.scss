@@ -99,15 +99,14 @@
     .header {
         .headerMenu {
             .menuRedes {
-                display: flex;
-                justify-content: right;
+                display: none;
             }
         }
         h1 {
             display: flex;
             justify-content: left;
             font-size: 3.5rem;
-            margin-top: -5rem;
+            
         }
         h3 {
             margin-top: $diezRem;
@@ -115,7 +114,7 @@
         }
         .navegacion {
             justify-content: start;
-            margin-top: $diezRem*2.05;
+            margin-top: $diezRem*1.9;
         }
     }   
 } 

@@ -124,19 +124,17 @@ a, a:visited {
 
 @media only screen and (min-width: 992px) {
   .header .headerMenu .menuRedes {
-    display: flex;
-    justify-content: right; }
+    display: none; }
   .header h1 {
     display: flex;
     justify-content: left;
-    font-size: 3.5rem;
-    margin-top: -5rem; }
+    font-size: 3.5rem; }
   .header h3 {
     margin-top: 10rem;
     text-align: start; }
   .header .navegacion {
     justify-content: start;
-    margin-top: 20.5rem; } }
+    margin-top: 19rem; } }
 
 .main {
   text-align: center; }
