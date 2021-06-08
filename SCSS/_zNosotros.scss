@@ -42,7 +42,7 @@ $colores:(
             }
             @for $i from 1 through 6 {
                 .item#{$i} {
-                    opacity: 0.2 * $i;
+                    opacity: 0.4 * $i;
                 }
             }
             @each $var, $color in $colores {
