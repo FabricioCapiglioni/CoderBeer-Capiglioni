@@ -61,7 +61,7 @@ a, a:visited {
   color: inherit; }
 
 .header {
-  background-image: url(/Imagenes/Brewery_2_banner.webp);
+  background-image: url(../Imagenes/Brewery_2_banner.webp);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,7 +219,7 @@ a, a:visited {
 .cerveza {
   display: none; }
   .cerveza .cervezaDisplay .displayTabla {
-    background-image: url(/Imagenes/banner-tabla.jpg);
+    background-image: url(../Imagenes/banner-tabla.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
